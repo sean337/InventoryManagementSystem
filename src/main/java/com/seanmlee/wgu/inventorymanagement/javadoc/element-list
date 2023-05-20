@@ -1,0 +1,4 @@
+module:com.seanmlee.wgu.inventorymanagement
+com.seanmlee.wgu.inventorymanagement
+com.seanmlee.wgu.inventorymanagement.Controller
+com.seanmlee.wgu.inventorymanagement.Model

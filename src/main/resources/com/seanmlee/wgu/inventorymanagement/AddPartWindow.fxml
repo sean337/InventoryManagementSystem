@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:controller="com.seanmlee.wgu.inventorymanagement.Controller.AddPartController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="607.0" prefWidth="359.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" >
+    <children>
+        <TextField fx:id="partFormName" layoutX="152.0" layoutY="170.0" promptText="Part Name" />
+        <TextField fx:id="partFormInventory" layoutX="152.0" layoutY="218.0" promptText="Inventory Level" />
+        <TextField fx:id="partFormPrice" layoutX="152.0" layoutY="270.0" promptText="Price/Cost" />
+        <TextField fx:id="partFormMax" layoutX="152.0" layoutY="364.0" promptText="Max" />
+        <TextField fx:id="partFormMachineId" layoutX="152.0" layoutY="412.0" promptText="Machine ID" />
+        <TextField fx:id="partFormMin" layoutX="152.0" layoutY="319.0" promptText="Min" />
+        <RadioButton fx:id="partFormInHouseButton" layoutX="55.0" layoutY="114.0" mnemonicParsing="false" onAction="#onInHouseRadioClick" selected="true" text="In-House">
+            <toggleGroup>
+                <ToggleGroup fx:id="partType" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="partFormOutsourcedButton" layoutX="214.0" layoutY="114.0" mnemonicParsing="false" onAction="#onOutsourcedRadioClicked" text="Outsourced" toggleGroup="$partType" />
+        <Button fx:id="partFormSaveButton" layoutX="100.0" layoutY="520.0" mnemonicParsing="false" onAction="#onSavePartButtonClick" text="Save" />
+        <Button fx:id="partFormCancelButton" layoutX="204.0" layoutY="520.0" mnemonicParsing="false" onAction="#onCancelButtonClick" text="Cancel" />
+        <Label layoutX="92.0" layoutY="46.0" text="Add A Part">
+            <font>
+                <Font size="39.0" />
+            </font>
+        </Label>
+        <TextField fx:id="partFormCompanyName" layoutX="152.0" layoutY="412.0" promptText="Company Name" visible="false" />
+        <Label layoutX="24.0" layoutY="170.0" prefHeight="26.0" prefWidth="63.0" text="Part Name" />
+        <Label layoutX="22.0" layoutY="223.0" text="Amount in Inventory" />
+        <Label layoutX="27.0" layoutY="275.0" text="Price/Cost" />
+        <Label layoutX="22.0" layoutY="324.0" text="Minimum Inventory" />
+        <Label layoutX="20.0" layoutY="369.0" text="Maximum Inventory" />
+        <Label fx:id="machineIdOrCompanyLabel" layoutX="20.0" layoutY="417.0" text="Machine ID" />
+    </children>
+</AnchorPane>

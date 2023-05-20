@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"m":"com.seanmlee.wgu.inventorymanagement","l":"com.seanmlee.wgu.inventorymanagement"},{"m":"com.seanmlee.wgu.inventorymanagement","l":"com.seanmlee.wgu.inventorymanagement.Controller"},{"m":"com.seanmlee.wgu.inventorymanagement","l":"com.seanmlee.wgu.inventorymanagement.Model"}]
